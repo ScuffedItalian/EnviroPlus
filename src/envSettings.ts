@@ -15,10 +15,14 @@ export function envSettings(disabled: boolean, scale: Vec3, position: Vec3){
 
     if(disabled === true){
         envS.position = [0, -999999, 0]
+
+    }
+    else{
+        envS.scale = scale
+        envS.position = position
     }
 
-    envS.scale = scale
-    envS.position = position
+    
     envS.push();
 
 
