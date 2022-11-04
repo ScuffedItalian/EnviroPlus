@@ -19,6 +19,7 @@ export function envSettings(disabled: boolean, scale: Vec3, position: Vec3){
 
     envS.scale = scale
     envS.position = position
+    envS.push();
 
 
 
